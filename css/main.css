@@ -15,8 +15,8 @@
  * 06. common styles
  * 07. header styles
  * 08. intro section
- * 09. process section
- * 10. features section
+ * 09. services section
+ * 10. products section
  * 11. pricing section
  * 12. testimomials section 
  * 13. faq section 
@@ -1403,40 +1403,40 @@ a.menu-toggle {
 
 /** 
  * ===================================================================
- * process section
+ * services section
  *
  * ------------------------------------------------------------------- 
  */
 
-#process {
+#services {
 	background: #FFFFFF;
 	padding-top: 12rem;
 	padding-bottom: 15rem;
 	overflow: hidden;
 }
-.process-content {
+.services-content {
 	position: relative;
 	text-align: center;
 }
-.process-content .right-side,
-.process-content .left-side,
-.process-content .image-part {
+.services-content .right-side,
+.services-content .left-side,
+.services-content .image-part {
 	width: 33.33333%;
 	font-size: 15px;
 	line-height: 27px;
 }
-.process-content .right-side, .process-content .left-side {
+.services-content .right-side, .services-content .left-side {
 	padding: 0 6% 24px;
 	position: absolute;
 	top: 0;
 }
-.process-content .right-side {
+.services-content .right-side {
 	right: 0;
 }
-.process-content .left-side {
+.services-content .left-side {
 	left: 0;
 }
-.process-content .image-part {
+.services-content .image-part {
 	margin: 0 auto;
 	height: 660px;
 	background-image: url("../images/appdesign.jpg");
@@ -1446,7 +1446,7 @@ a.menu-toggle {
 	-moz-background-size: contain;
 	background-size: contain;
 }
-.process-content .item[data-item]::before {
+.services-content .item[data-item]::before {
 	background: #38424e;
 	color: #FFFFFF;
 	border-radius: 100%;
@@ -1461,7 +1461,7 @@ a.menu-toggle {
 	vertical-align: middle;
 	margin-bottom: 1.5rem;
 }
-.process-content h5 {
+.services-content h5 {
 	color: #05bca9;
 	font-size: 1.6rem;
 	line-height: 1.875;
@@ -1471,25 +1471,25 @@ a.menu-toggle {
 
 /**
  * responsive:
- * process
+ * services
  * -
  */
 
 @media only screen and (max-width:1024px) {
-	.process-content .right-side, .process-content .left-side {
+	.services-content .right-side, .services-content .left-side {
 		padding: 0 3% 24px;
 		width: 35%;
 	}
-	.process-content .image-part {
+	.services-content .image-part {
 		height: 600px;
 		width: 30%;
 	}
 }
 @media only screen and (max-width:768px) {
-	#process {
+	#services {
 		padding-bottom: 27rem;
 	}
-	.process-content .right-side, .process-content .left-side {
+	.services-content .right-side, .services-content .left-side {
 		position: static;
 		width: 100%;
 		max-width: 480px;
@@ -1499,7 +1499,7 @@ a.menu-toggle {
 		margin-right: auto;
 		padding-bottom: 0;
 	}
-	.process-content .image-part {
+	.services-content .image-part {
 		width: 300px;
 		position: absolute;
 		bottom: -630px;
@@ -1508,10 +1508,10 @@ a.menu-toggle {
 	}
 }
 @media only screen and (max-width:400px) {
-	#process {
+	#services {
 		padding-bottom: 21rem;
 	}
-	.process-content .image-part {
+	.services-content .image-part {
 		width: 230px;
 		bottom: -540px;
 		margin-left: -115px;
@@ -1521,13 +1521,13 @@ a.menu-toggle {
 
 /** 
  * ===================================================================
- * features section
+ * products section
  *
  * ------------------------------------------------------------------- 
  */
 
-#features {
-	background: #090909 url(../images/features-bg.jpg) no-repeat center;
+#products {
+	background: #090909 url(../images/products-bg.jpg) no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -1535,34 +1535,34 @@ a.menu-toggle {
 	padding-bottom: 12rem;
 	color: white;
 }
-#features .section-intro h1 {
+#products .section-intro h1 {
 	color: white;
 }
-#features .section-intro h5 {
+#products .section-intro h5 {
 	color: rgba(255, 255, 255, 0.5);
 }
-#features .section-intro p {
+#products .section-intro p {
 	color: rgba(255, 255, 255, 0.7);
 }
-.features-content {
+.products-content {
 	max-width: 1200px;
 }
-.features-list {
+.products-list {
 	margin-top: 1.2rem;
 	text-align: center;
 }
-.features-list .feature {
+.products-list .feature {
 	margin-bottom: 1.2rem;
 	padding: 0 32px;
 }
-.features-list .icon {
+.products-list .icon {
 	display: inline-block;
 	margin-bottom: 2.1rem;
 }
-.features-list .icon i {
+.products-list .icon i {
 	font-size: 4.8rem;
 }
-.features-list .h05 {
+.products-list .h05 {
 	font-size: 1.7rem;
 	line-height: 1.765;
 	color: #05bca9;
@@ -1571,25 +1571,25 @@ a.menu-toggle {
 
 /**
  * responsive:
- * features
+ * products
  * -
  */
 
 @media only screen and (max-width:768px) {
-	.features-content {
+	.products-content {
 		max-width: 600px;
 	}
-	.features-list .feature {
+	.products-list .feature {
 		padding: 0 15px;
 	}
 }
 @media only screen and (max-width:600px) {
-	.features-list .feature {
+	.products-list .feature {
 		padding: 0 10px;
 	}
 }
 @media only screen and (max-width:400px) {
-	.features-list .feature {
+	.products-list .feature {
 		padding: 0;
 	}
 }
@@ -1685,23 +1685,23 @@ a.menu-toggle {
 	background: #58687b;
 	color: #FFFFFF;
 }
-.pricing-content .price-block .features {
+.pricing-content .price-block .products {
 	list-style: none;
 	font-family: "raleway-bold", sans-serif;
 	font-size: 1.5rem;
 	color: rgba(0, 0, 0, 0.4);
 	margin: .6rem 0 1.8rem 0;
 }
-.pricing-content .price-block .features li {
+.pricing-content .price-block .products li {
 	padding: .6rem 0;
 	border-bottom: 1px solid #EAEAED;
 }
-.pricing-content .price-block .features li strong {
+.pricing-content .price-block .products li strong {
 	color: #353F49;
 	font-family: "raleway-bold", serif;
 	margin-right: 5px;
 }
-.pricing-content .price-block .features li:last-child {
+.pricing-content .price-block .products li:last-child {
 	border: none;
 }
 .pricing-content .primary .top-part {

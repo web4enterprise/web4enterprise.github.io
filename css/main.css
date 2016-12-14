@@ -1626,7 +1626,7 @@ a.menu-toggle {
 	padding: 3.9rem 1.5rem;
 }
 .pricing-content .price-block .top-part {
-	background: #58687b;
+	background: #cc5559;
 	color: #FFFFFF;
 	padding-bottom: 2.4rem;
 	position: relative;
@@ -1706,6 +1706,9 @@ a.menu-toggle {
 }
 .pricing-content .primary .top-part {
 	background: #cc5559;
+}
+.pricing-content .secondary .top-part {
+	background: #dd7777;
 }
 .pricing-content .primary .top-part::before {
 	content: attr(data-info);

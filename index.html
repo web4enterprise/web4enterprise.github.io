@@ -29,6 +29,14 @@
 	================================================== -->
 	<link rel="icon" type="image/png" href="favicon.png">
 
+	<!-- emailjs
+	================================================== -->
+	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<script type="text/javascript">
+	   (function(){
+		  emailjs.init("user_R799aVIwZXBtz1iq5yUPt");
+	   })();
+	</script>
 </head>
 
 <body id="top">
@@ -254,7 +262,7 @@
 							<p>We can create your own solution.</p>
 							<p>if you're ok to release it with an open-source licence copyrighted by web4enterprise.com, we can offer you this special pricing.</p>
 
-							<a class="button large" href="mailto:regis@web4enterprise.com?subject=open-source custom solution&body=Hello Regis, We at <company> needs <please describe your need>.">Contact us.</a>
+							<a class="button large" href="#contact">Contact us.</a>
 
 						</div>										
 
@@ -280,7 +288,7 @@
 							<p>We can integrate a existing product of any supplier.</p>
 
 							<a class="button large" href="http://kontactr.com/user/rramillien">Contact us.</a>
-							<a class="button large" href="mailto:regis@web4enterprise.com?subject=Integration&body=Hello Regis, We at <company> needs <please describe your need>.">Contact us.</a>
+							<a class="button large" href="#contact">Contact us.</a>
 
 						</div>
 
@@ -310,7 +318,7 @@
 								<li><strong>60</strong> Email Accounts</li>
 							</ul>
 
-							<a class="button large" href="mailto:regis@web4enterprise.com?subject=Custom solution&body=Hello Regis, We at <company> needs <please describe your need>.">Contact us.</a>
+							<a class="button large" href="#contact">Contact us.</a>
 
 						</div>										
 
@@ -340,7 +348,7 @@
 								<li><strong>30</strong> Email Accounts</li>
 							</ul>
 
-							<a class="button large" href="mailto:regis@web4enterprise.com?subject=Consulting&body=Hello Regis, We at <company> needs <please describe your need>.">Contact us.</a>
+							<a class="button large" href="#contact">Contact us.</a>
 
 						</div>
 
@@ -416,7 +424,7 @@
 
 	<!-- contact
 	================================================== -->
-	<section id="faq">
+	<section id="contact">
 
 		<div class="row section-intro">
 			<div class="col-twelve with-bottom-line">
@@ -429,7 +437,7 @@
 			</div>   		
 		</div>
 
-		<div class="row faq-content">
+		<div class="row contact-content">
 
 			<div class="q-and-a block-1-2 block-tab-full group">
 
@@ -437,7 +445,10 @@
 
 					<h3>Contact form</h3>
 
-					<script type="text/javascript"> id = 208241; clr = "ebebeb-737373-ffffff-ffaaaa"; </script><script type="text/javascript" src="http://kontactr.com/wp.js"></script>
+					Email address:<br/><input id="emailAddress" placeholder="Your email adrdess."></input><br/>
+					Name:<br/><input id="name" placeholder="Your name."></input><br/>
+					Message:<br/><textarea id="message" placeholder="Your message here"></textarea><br/>
+					<a class="button large" href="#contact" onclick="emailjs.send('default_service', 'template', {from_email: document.getElementById('emailAddress').value, from_name: document.getElementById('name').value, message: document.getElementById('message').value}); alert('thank you'); return false;">Send</a>
 				</div>
 
 				<div class="bgrid">
@@ -450,9 +461,9 @@
 
 			</div> <!-- /q-and-a --> 
 
-		</div> <!-- /faq-content --> 
+		</div> <!-- /contact-content --> 
 
-	</section> <!-- /faq --> 
+	</section> <!-- /contact --> 
 
 
 	<!-- footer
@@ -482,7 +493,7 @@
 					<ul>
 						<li><a href="#">About Us</a></li>
 						<li><a href="#">Blog</a></li>
-						<li><a href="#">FAQ</a></li>
+						<li><a href="#">contact</a></li>
 						<li><a href="#">Terms</a></li>
 						<li><a href="#">Privacy Policy</a></li>
 					</ul>

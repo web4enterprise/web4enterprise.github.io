@@ -709,7 +709,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	border: 0;
 	padding: 0;
 }
-
 /** 
  * ===================================================================
  * common styles 
@@ -1630,11 +1629,13 @@ a.menu-toggle {
 	color: #FFFFFF;
 	padding-bottom: 2.4rem;
 	position: relative;
+	min-height: 34rem;
 }
 .pricing-content .price-block .bottom-part {
 	padding-top: 2.4rem;
 	padding-left: 3rem;
 	padding-right: 3rem;
+	min-height: 38rem;
 }
 .pricing-content .price-block .plan-title {
 	color: #FFFFFF;
@@ -1708,7 +1709,7 @@ a.menu-toggle {
 	background: #cc5559;
 }
 .pricing-content .secondary .top-part {
-	background: #dd7777;
+	background: #777736;
 }
 .pricing-content .primary .top-part::before {
 	content: attr(data-info);
@@ -1997,7 +1998,7 @@ a.menu-toggle {
  */
 
 #contact {
-	background: #EAEAED;
+	background: #FFFFFF;
 	padding-top: 12rem;
 	padding-bottom: 12rem;
 }
@@ -2009,6 +2010,17 @@ a.menu-toggle {
 	padding: 0 30px;
 }
 
+.contact-content .button {
+	color: #353F49;
+	padding: 0 5rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+.contact-content .button:hover,
+.contact-content .button:focus {
+	background: #58687b;
+	color: #FFFFFF;
+}
 /**
  * responsive:
  * contact
@@ -2205,10 +2217,10 @@ footer ul li {
 	color: #FFFFFF;
 }
 .footer-main .footer-logo {
-	width: 162px;
-	height: 39px;
-	background: url("../images/footer-logo.png") no-repeat center;
-	background-size: 162px 39px;
+	width: 42px;
+	height: 42px;
+	background: url("../images/logo.png") no-repeat center;
+	background-size: 42px 42px;
 	margin: -.6rem 0 2.1rem -.3rem;
 	display: block;
 }
